@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       @keyframes sliedin {
+           0%{
+               left: 0;
+               top: 0;
+               background-color: fuchsia;
+           }
+           50%{
+               left: 400;
+               top: 100px;
+               background-color: greenyellow;
+           }
+           100%{
+               left: 800px;
+               top: 0;
+               background-color: red;
+
+           }
+           
+       }
+       .stage{
+            height: 200px;
+            min-width: 800px;
+            background-color: cyan;
+        }
+        .ball{
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            background-color: crimson;
+            position: absolute;
+        }
+        .stage:hover .ball{
+            animation: sliedin 2s ease-in-out 1s infinite alternate ;
+        }
+           
+    </style>
+</head>
+<body>
+    <div class="stage">
+        <div class="ball"></div>
+    </div>
+    
+</body>
+</html>
